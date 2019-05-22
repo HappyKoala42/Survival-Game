@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+
+    <h3 id="dayTag" class="inline">Day: 1</h3> <h3 id="daysRemainTag" class="inline">Day(s) Left: 10</h3> <h3 id="hoursTag" class="inline">Hour(s) Left: 5</h3>  
+
+    <div id="screenchange">
+        <button class="btn btn-primary statusBTN">Status</button>
+        <button class="btn btn-primary" id="mapbutton">Map</button>
+        <button class="btn btn-primary" id="opsbutton">Operations</button>
+        <button class="btn btn-primary" id="relsbutton">Relationships</button>
+    </div>
+    <!--  -->
+
+    <div class="playerStatus hide">
+        <h1>PLAYER STATUS</h1>
+        <p class="inline">Hunger:</p><meter class="hunger styled" min="1" max="100" low="25" high="75" optimum="10" value="10"></meter>
+        <p class="inline">Thirst:</p><meter class="thirst styled" min="1" max="100" low="25" high="75" optimum="10" value="10"></meter>
+        <p class="inline">Warmth:</p><meter class="thirst styled" min="1" max="100" low="25" high="75" optimum="10" value="10"></meter>
+        <p class="inline">Health:</p><meter class="health styled" min="1" max="100" low="25" high="75" optimum="10" value="10"></meter>
+        <div>
+            <button class="btn btn-primary sleepBTN">Sleep</button>
+            <button class="btn btn-primary hungerBTN">Eat/Drink</button>
+            <button class="btn btn-primary exploreBTN">Explore</button>
+        </div>
+    </div>
+
+        <hr>
+
+    <div class="situations-div scrollable">
+        <ul id="situations-list">
+            <li>You have started the game!</li>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="Functions.js"></script>
+</body>
+</html>
